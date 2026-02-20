@@ -1,0 +1,44 @@
+{
+  "name": "proyecto-vulnerable",
+  "version": "1.0.0",
+  "description": "Proyecto con dependencias vulnerables para practicar OWASP Dependency Check",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "4.16.0",
+    "lodash": "4.17.4",
+    "mongoose": "5.0.0",
+    "socket.io": "2.0.4",
+    "jsonwebtoken": "8.3.0",
+    "passport": "0.4.0",
+    "bcrypt": "1.0.3",
+    "request": "2.87.0",
+    "axios": "0.18.0",
+    "angular": "1.6.9",
+    "react": "16.2.0",
+    "jquery": "3.2.1",
+    "bootstrap": "3.3.7",
+    "moment": "2.20.1",
+    "underscore": "1.8.3",
+    "async": "2.6.0",
+    "bluebird": "3.5.1",
+    "debug": "3.1.0",
+    "ejs": "2.5.7",
+    "handlebars": "4.0.11",
+    "marked": "0.3.9",
+    "validator": "9.4.1",
+    "helmet": "3.12.1",
+    "cors": "2.8.4",
+    "body-parser": "1.18.2"
+  },
+  "devDependencies": {
+    "webpack": "3.11.0",
+    "babel-core": "6.26.0",
+    "eslint": "4.18.0",
+    "mocha": "5.0.0",
+    "chai": "4.1.2",
+    "gulp": "3.9.1"
+  }
+}

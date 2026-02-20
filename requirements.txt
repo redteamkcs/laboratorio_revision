@@ -1,0 +1,59 @@
+# requirements.txt - Dependencias con vulnerabilidades conocidas
+# ADVERTENCIA: Este archivo contiene dependencias vulnerables para fines educativos
+# NO USAR EN PRODUCCIÓN
+
+# Flask con vulnerabilidades conocidas (versiones antiguas)
+Flask==0.12.3           # CVE-2019-1010083 - Information Exposure
+Werkzeug==0.14.1        # CVE-2019-14806 - Debugger PIN vulnerable
+Jinja2==2.9.6           # CVE-2016-10745 - Sandbox escape
+
+# Django con vulnerabilidades críticas
+Django==1.11.29         # CVE-2020-9402 - SQL Injection via GIS functions
+django-cors-headers==2.5.3  # CVE-2021-33179 - Information Exposure
+
+# Bibliotecas de seguridad con versiones vulnerables
+cryptography==2.3       # CVE-2020-25659 - Bleichenbacher timing oracle
+pyOpenSSL==17.5.0       # CVE-2020-25663 - Certificate validation bypass
+
+# Dependencias de bases de datos vulnerables
+mysql-connector-python==8.0.5  # CVE-2018-3257 - Privilege escalation
+psycopg2==2.7.7         # CVE-2019-8631 - Buffer overflow
+
+# Bibliotecas de parsing vulnerables
+PyYAML==4.1             # CVE-2017-18342 - Arbitrary code execution
+lxml==3.7.3             # CVE-2018-19787 - XSS via HTML attribute
+beautifulsoup4==4.6.0   # CVE-2018-16548 - Denial of Service
+
+# Herramientas de desarrollo vulnerables
+pytest==3.6.4           # CVE-2020-29651 - Command injection
+coverage==4.4.2         # CVE-2018-1000827 - Directory traversal
+
+# Dependencias de red vulnerables
+requests==2.18.4        # CVE-2018-18074 - Information Exposure via Authorization header
+urllib3==1.22           # CVE-2018-20060 - Connection pool behaviour vulnerability
+httplib2==0.11.3        # CVE-2021-21240 - CRLF injection
+
+# Dependencias de autenticación vulnerables
+python-jose==2.0.2      # CVE-2018-20481 - JWT validation bypass
+PyJWT==1.6.4            # CVE-2022-29217 - Algorithm confusion attack
+passlib==1.7.1          # CVE-2015-3241 - Weak bcrypt implementation
+
+# Otras dependencias vulnerables
+paramiko==2.4.2         # CVE-2018-7750 - Authentication bypass
+celery==4.2.0           # CVE-2020-17495 - Pickle deserialization vulnerability
+redis==2.10.6           # CVE-2021-32711 - Denial of Service
+pillow==5.3.0           # CVE-2019-16865 - Buffer overflow
+numpy==1.15.4           # CVE-2019-6446 - Arbitrary code execution
+pandas==0.23.4          # CVE-2020-13091 - Information Exposure
+
+# Versión vulnerable de tensorflow (problemas de seguridad conocidos)
+tensorflow==1.12.0      # CVE-2021-29622 - NULL pointer dereference
+
+# Framework web adicional con vulnerabilidades
+Pyramid==1.9.2          # CVE-2016-6895 - Cross-site scripting
+web2py==2.17.2          # CVE-2020-28362 - SQL Injection
+
+# Utilidades con vulnerabilidades
+click==6.7              # CVE-2019-17670 - Command injection via malicious parameters
+setuptools==39.2.0      # CVE-2020-28469 - Path traversal via package installation
+pip==9.0.3              # CVE-2019-20916 - Directory traversal during package installation
